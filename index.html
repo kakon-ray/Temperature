@@ -15,16 +15,42 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <style>
-      body {
-        background: url(images/bg-image.jpg) no-repeat;
-        background-size: cover;
-        height: 100vh;
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        position: relative;
+        width: 100%;
+      }
+
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.651); /* Black see-through */
+        color: #f1f1f1;
+        width: 100%;
+        height: 100%;
+        opacity: 2;
+        color: white;
+        font-size: 20px;
+
+        text-align: center;
       }
     </style>
   </head>
 
-  <body>
-    <div class="container">
+  <body class="container">
+    <img src="images/bg-image.jpg"Avatar" class="image">
+    <div class="overlay">
       <form class="col-md-6 m-auto py-5">
         <div class="input-group mb-3">
           <input
